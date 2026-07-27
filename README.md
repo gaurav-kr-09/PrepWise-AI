@@ -1,8 +1,8 @@
 # 🎯 PrepWise-AI
 
-An AI-powered mock interview platform that helps students and professionals prepare for technical and HR interviews through AI-generated questions, intelligent answer evaluation, and personalized feedback.
+An AI-powered mock interview platform designed to help students and professionals prepare for technical and HR interviews through AI-generated questions, intelligent answer evaluation, and personalized feedback.
 
-> 🚧 This project is currently under active development. The core interview workflow has been implemented, and additional features are being added.
+> 🚧 **Project Status:** Actively under development. The core application architecture and MVP features have been implemented, while additional enhancements are currently in progress.
 
 ---
 
@@ -11,12 +11,12 @@ An AI-powered mock interview platform that helps students and professionals prep
 - 🔐 Secure User Authentication (JWT)
 - 👤 User Registration & Login
 - 🤖 AI-powered Technical & HR Interview Modes
-- 📝 AI-generated Interview Questions using Gemini API
+- 📝 AI-generated Interview Questions using Google Gemini API
 - 📊 AI-based Answer Evaluation & Scoring
 - 💡 Personalized Feedback & Improvement Suggestions
 - 📚 Interview History Tracking
-- 📱 Responsive Modern UI
 - 🛡️ Protected Routes & Session Management
+- 📱 Responsive User Interface
 
 ---
 
@@ -36,55 +36,114 @@ An AI-powered mock interview platform that helps students and professionals prep
 - JWT Authentication
 - bcrypt.js
 
-### AI
+### AI Integration
 - Google Gemini API
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 PrepWise-AI
 │
 ├── frontend/
-│   ├── src/
 │   ├── public/
-│   └── package.json
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── backend/
 │   ├── src/
 │   ├── tests/
-│   └── package.json
+│   ├── package.json
+│   └── .env.example
 │
 └── README.md
 ```
 
 ---
 
-## 🚀 Planned Features
+## 🚀 Current Workflow
 
-- 🎙️ Voice-based AI Interviews
-- 💻 Coding Interview Round
+1. User Registration / Login
+2. Authentication using JWT
+3. Select Interview Type (Technical / HR)
+4. AI generates interview questions using Gemini API
+5. User submits responses
+6. AI evaluates answers
+7. Personalized feedback and score generation
+8. Interview history stored for future reference
+
+---
+
+## 🚀 Planned Enhancements
+
+- 🎙️ Voice-based Mock Interviews
+- 💻 AI-powered Coding Interview Round
 - 📈 Performance Analytics Dashboard
-- 🎯 Difficulty-based Interview Generation
 - 🧠 AI Follow-up Questions
 - 📄 Resume-based Interview Generation
-- 🌐 Live Deployment
+- 🌐 Cloud Deployment
+- 📊 Detailed Performance Reports
 
 ---
 
 ## 📌 Current Status
 
-The project is under active development. The authentication flow, interview workflow, AI integration, and core application architecture have been implemented. Additional features and deployment are currently in progress.
+The project is currently in active development.
+
+Implemented modules include:
+
+- User Authentication
+- Interview Workflow
+- Gemini AI Integration
+- Backend REST APIs
+- Interview History Management
+- Core Frontend Architecture
+
+The project is being continuously improved with additional features, UI refinements, and production-ready optimizations.
+
+---
+
+## ⚙️ Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/gaurav-kr-09/PrepWise-AI.git
+cd PrepWise-AI
+```
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Create a `.env` file inside the `backend` directory using the provided `.env.example` file and configure your MongoDB connection string, JWT secret, and Gemini API key.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and feature requests are always welcome.
+Contributions, feature suggestions, and pull requests are welcome.
 
 ---
 
 ## 📜 License
 
 This project is developed for educational and portfolio purposes.
+
+---
+
+### ⭐ If you found this project helpful, consider giving it a star.
